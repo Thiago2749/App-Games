@@ -12,4 +12,4 @@ Link do Figma: https://www.figma.com/file/9Wh9KkitUddCxL1B6YRdY1/App?type=design
 Link da Sprint 1: https://github.com/users/Thiago2749/projects/2 
 
 
-
+Alterado
