@@ -3,7 +3,7 @@ Equipe: Daniel Oliveira,
         Gabriela Assimos Moreira, 
         Lucas Mendonça Silva,
         Thiago Gomes dos Santos,
-        Túlio Soares. 
+        Túlio Cerqueira Soares. 
 
 Tema: Aplicativo com estilo de rede social, porém voltado exclusivamente para a comunidade gamer. O aplicativo teria opções de chat aberto para que as pessoas possam entrar e conversar sobre jogos específicos, se enturmar e até mesmo encontrar um grupo para poder jogarem juntos. Teria uma guia exclusiva para auxiliar os gamers a encontrar os melhores locais para adquirir dicas e informações a cerca de uma variedade enorme de jogos. O aplicativo ainda conta com uma mecânica única de ganho de experiência durante ações dentro da plataforma para poder aumentar seu nível e ganhar um destaque único na comunidade.
 
