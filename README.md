@@ -1,6 +1,6 @@
 Equipe: Daniel Oliveira,
         Erick Magdaleno de Melo,
-        Gabriela Assimos Moreira, 
+        Gabriela Assimos Costa Moreira, 
         Lucas Mendonça Silva,
         Thiago Gomes dos Santos,
         Túlio Cerqueira Soares. 
