@@ -45,7 +45,7 @@ return (
 
     </View>
 
-    <Text style={Texto1.container} numberOfLines={1}>Não tenho uma conta. <Text style={Criar.container} numberOfLines={1}> Criar.</Text></Text>
+    <Text style={Texto1.container} numberOfLines={1}>Não tenho uma conta. <Pressable onPress={() => navigation.navigate('TelaCadastro')}> <Text style={Criar.container}> Criar.</Text> </Pressable> </Text>
 
     <Text style={Texto2.container} numberOfLines={1}>Esqueci minha senha. <Pressable onPress={() => navigation.navigate('TelaRecSenha')}> <Text style={Recuperar.container}> Recuperar.</Text> </Pressable> </Text>
 
@@ -57,43 +57,6 @@ return (
 
   );
 }
-
-const Botao_Estilo = StyleSheet.create({
-  buttonStyle: {
-    flex: 1,
-    backgroundColor: '#0A0A0A',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
-
-/*const MyComponent = () => {
-  
-    return (
-        <TouchableOpacity onPress={() => navigation.navigate('TelaRecSenha')}>
-          <Text style={Recuperar.container}>Recuperar.</Text>
-        </TouchableOpacity>
-    );
-  };*/
-
-/*const Button = () => {
-
-    return(
-
-    <TouchableOpacity style={Recuperar.container} onPress={navigation.navigate('TelaRecSenha')}>
-        <Text style={Recuperar.container}> Recuperar.</Text>
-    </TouchableOpacity>
-
-    )
-
-}*/
-
-/*const Botao = StyleSheet.create({
-    container: {
-      top: 510,
-      left: 168,
-    },
-  });*/
 
 const styles = StyleSheet.create({
   container: {
@@ -273,7 +236,7 @@ const Criar = StyleSheet.create({
     color: '#b811f5',
     position: 'absolute',
     top: 0,
-    left: 160,
+    left: 0,
     textAlign: 'left',
     textDecorationLine: 'underline',
     zIndex: 1,

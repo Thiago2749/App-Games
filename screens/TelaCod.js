@@ -4,29 +4,29 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
 import { useNavigation } from '@react-navigation/native';
 
-export default function TelaRecSenha({navigation}) {
+export default function TelaCod({navigation}) {
 
 return(
 
 <View style={styles.container}>
 
-<View style={Barra_Email.container}>
+<View style={Barra_Cod.container}>
 
-<Text style={Texto_Email.container} numberOfLines={1}>E-MAIL</Text>
+<Text style={Texto_Cod.container} numberOfLines={1}>CÓDIGO</Text>
 
 </View> 
-  
-<View style={Barra_EnvCod.container}>
 
-<Pressable onPress={() => navigation.navigate('TelaCod')}> 
+<View style={Barra_Confirm.container}>
 
-<Text style={EnvCod.container} numberOfLines={1}>Enviar Código de Recuperação</Text> 
+<Pressable onPress={() => navigation.navigate('TrocaSenha')}> 
+
+<Text style={Confirm.container} numberOfLines={1}>Confirmar</Text>
 
 </Pressable>
 
 </View>
 
-<Text style={Informe.container}>Informe seu E-mail:</Text>
+<Text style={Insira.container}>Insíra o Código:</Text>
 
 <Image source={require('../assets/Logo.png')} style={Logo.container} resizeMode='cover'/>
 
@@ -56,7 +56,7 @@ const Logo = StyleSheet.create({
   },
 });
 
-const Barra_Email = StyleSheet.create({
+const Barra_Cod = StyleSheet.create({
   container: {
     width: 300,
     height: 38,
@@ -72,7 +72,7 @@ const Barra_Email = StyleSheet.create({
   },
 });
 
-const Texto_Email = StyleSheet.create({
+const Texto_Cod = StyleSheet.create({
   container: {
     height: 15,
     fontFamily: 'Francois One',
@@ -90,7 +90,7 @@ const Texto_Email = StyleSheet.create({
   },
 });
 
-const Barra_EnvCod = StyleSheet.create({
+const Barra_Confirm = StyleSheet.create({
   container: {
     width: 280,
     height: 40,
@@ -106,7 +106,7 @@ const Barra_EnvCod = StyleSheet.create({
   },
 });
 
-const EnvCod = StyleSheet.create({
+const Confirm = StyleSheet.create({
   container: {
     display: 'flex',
     width: 280,
@@ -128,7 +128,7 @@ const EnvCod = StyleSheet.create({
   },
 });
 
-const Informe = StyleSheet.create({
+const Insira = StyleSheet.create({
   container: {
     width: 300,
     height: 35,
@@ -143,8 +143,8 @@ const Informe = StyleSheet.create({
     color: '#c4c4c4',
     position: 'absolute',
     top: 220,
-    left: 32,
-    textAlign: 'left',
+    left: 50,
+    textAlign: 'auto',
   
   },
 });

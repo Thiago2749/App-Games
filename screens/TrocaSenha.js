@@ -1,32 +1,34 @@
 import React from 'react';
-import { ImageBackground, View, Text, StyleSheet, Button, Image, Pressable } from 'react-native';
+import { ImageBackground, View, Text, StyleSheet, Button, Image } from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
 import { useNavigation } from '@react-navigation/native';
 
-export default function TelaRecSenha({navigation}) {
+export default function TrocaSenha({navigation}) {
 
 return(
 
 <View style={styles.container}>
 
-<View style={Barra_Email.container}>
+<View style={Barra_Senha.container}>
 
-<Text style={Texto_Email.container} numberOfLines={1}>E-MAIL</Text>
+<Text style={Texto_Senha.container} numberOfLines={1}>Nova Senha</Text>
 
 </View> 
-  
-<View style={Barra_EnvCod.container}>
 
-<Pressable onPress={() => navigation.navigate('TelaCod')}> 
+<View style={Barra_Confirm_Senha.container}>
 
-<Text style={EnvCod.container} numberOfLines={1}>Enviar Código de Recuperação</Text> 
+<Text style={Texto_Confirm_Senha.container} numberOfLines={1}>Confirmar Senha</Text>
 
-</Pressable>
+</View> 
+
+<View style={Barra_Confirm.container}>
+
+<Text style={Confirm.container} numberOfLines={1}>Confirmar</Text>
 
 </View>
-
-<Text style={Informe.container}>Informe seu E-mail:</Text>
+    
+<Text style={Nova_Senha.container}>Insíra a Nova Senha:</Text>
 
 <Image source={require('../assets/Logo.png')} style={Logo.container} resizeMode='cover'/>
 
@@ -56,7 +58,7 @@ const Logo = StyleSheet.create({
   },
 });
 
-const Barra_Email = StyleSheet.create({
+const Barra_Senha = StyleSheet.create({
   container: {
     width: 300,
     height: 38,
@@ -72,7 +74,7 @@ const Barra_Email = StyleSheet.create({
   },
 });
 
-const Texto_Email = StyleSheet.create({
+const Texto_Senha = StyleSheet.create({
   container: {
     height: 15,
     fontFamily: 'Francois One',
@@ -90,7 +92,41 @@ const Texto_Email = StyleSheet.create({
   },
 });
 
-const Barra_EnvCod = StyleSheet.create({
+const Barra_Confirm_Senha = StyleSheet.create({
+    container: {
+      width: 300,
+      height: 38,
+      backgroundColor: '#d9d9d9',
+      borderTopLeftRadius: 30,
+      borderTopRightRadius: 30,
+      borderBottomRightRadius: 30,
+      borderBottomLeftRadius: 30,
+      position: 'absolute',
+      top: 330,
+      left: 8,
+      right: 10,
+    },
+  });
+  
+  const Texto_Confirm_Senha = StyleSheet.create({
+    container: {
+      height: 15,
+      fontFamily: 'Francois One',
+      fontSize: 15,
+      fontWeight: '400',
+      lineHeight: 15,
+      color: 'rgba(70, 70, 70, 0.5)',
+      position: 'relative',
+      textAlign: 'left',
+      zIndex: 1,
+      marginTop: 12,
+      marginRight: 0,
+      marginBottom: 0,
+      marginLeft: 10,
+    },
+  });
+
+const Barra_Confirm = StyleSheet.create({
   container: {
     width: 280,
     height: 40,
@@ -101,12 +137,12 @@ const Barra_EnvCod = StyleSheet.create({
     borderBottomLeftRadius: 40,
     opacity: 0.75,
     position: 'absolute',
-    top: 360,
+    top: 400,
     left: 16,
   },
 });
 
-const EnvCod = StyleSheet.create({
+const Confirm = StyleSheet.create({
   container: {
     display: 'flex',
     width: 280,
@@ -128,7 +164,7 @@ const EnvCod = StyleSheet.create({
   },
 });
 
-const Informe = StyleSheet.create({
+const Nova_Senha = StyleSheet.create({
   container: {
     width: 300,
     height: 35,
@@ -143,8 +179,10 @@ const Informe = StyleSheet.create({
     color: '#c4c4c4',
     position: 'absolute',
     top: 220,
-    left: 32,
-    textAlign: 'left',
+    left: 30,
+    textAlign: 'auto',
+    alignSelf: 'center',
+    Flex: 1,
   
   },
 });
